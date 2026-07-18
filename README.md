@@ -11,7 +11,7 @@ The pipeline is explicitly designed for memory efficiency on hardware with limit
 - stich.ipynb: *Jupyter notebook for combining thin section images*
 
 ## Folder Structure - set these up in the respository before use!
-- raw_data: *folder contains a folder for each thin section. Sub-folders shoudl be titled with the core-section-sample*
+- raw_data: *folder contains a sub-folder for each thin section. Sub-folders should be titled with the sample ID, and contain a list of .NEF files*
 - image_outputs: *folder includes final image outputs*
 
 ## How to use
