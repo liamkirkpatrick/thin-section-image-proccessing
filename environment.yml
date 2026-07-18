@@ -1,0 +1,8 @@
+name: stitch
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - jupyter
+  - numpy
+prefix: /Users/Liam/anaconda3/envs/stitch
