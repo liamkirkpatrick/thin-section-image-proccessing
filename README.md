@@ -10,6 +10,36 @@ The pipeline is explicitly designed for memory efficiency on hardware with limit
 - environment.yml: *contains environment variables for conda environment*
 - stich.ipynb: *Jupyter notebook for combining thin section images*
 
-## Folder Structure
+## Folder Structure - set these up in the respository before use!
 - raw_data: *folder contains a folder for each thin section. Sub-folders shoudl be titled with the core-section-sample*
 - image_outputs: *folder includes final image outputs*
+
+## How to use
+
+### 1. Set up the Environment
+
+This project uses a Conda environment to manage dependencies (like OpenCV and rawpy) and prevent version conflicts. 
+
+Open your terminal (or Anaconda Prompt on Windows) and run the following commands:
+
+__Clone the repository and navigate into it__
+- git clone [https://github.com/liamkirkpatrick/thin-section-image-proccessing.git](https://github.com/liamkirkpatrick/thin-section-image-proccessing.git)
+- cd thin-section-image-proccessing
+
+__Create the environment from the environment.yml file__
+- conda env create -f environment.yml
+
+__Activate the new environment__
+- conda activate thin-section-stitch
+
+### 2. Prepare Your data
+
+Follow instructions above to set up the file structure.
+
+### 3. Run the notebook
+
+- Once your data is in place, launch Jupyter Lab or Jupyter Notebook from your activated environment by typing 'jupyter lab'
+- Either mannually enter the samples you wish to run as a list of strings (sampleID) or use script to automatically read in all samples in raw_data folder
+- Run the cells sequentially.
+
+  
