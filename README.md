@@ -8,11 +8,14 @@ The pipeline is explicitly designed for memory efficiency on hardware with limit
 
 ## Repository Contents
 - environment.yml: *contains environment variables for conda environment*
-- stich.ipynb: *Jupyter notebook for combining thin section images*
+- stich_simple.ipynb: *Jupyter notebook for combining thin section images - simple version*
+- stitch.ipynb *My best version currently. Builds on stitch with the abilityt o pull data from external files, run larger batches with better memory management, and automatically adjust confidence thresholds*
+- stitch_lenscorrect.ipynb *In-proccess script to apply a lens correction (based on lens data from .NEF metadata). Not currently working - do not use yet.*
 
 ## Folder Structure - set these up in the respository before use!
 - raw_data: *folder contains a sub-folder for each thin section. Sub-folders should be titled with the sample ID, and contain a list of .NEF files*
 - image_outputs: *folder includes final image outputs*
+- (optional) extenal drive: *script allows you to point to an external drive, although you may have to give permissions for your jupyter workspace to access this path.*
 
 ## How to use
 
